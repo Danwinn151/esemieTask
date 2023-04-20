@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Kelly Audu",
+      "email": "kellyAudu@gmail.com",
+      "address":      {
+        "street": "plot 32, churchstreet",
+        "city": "california",
+        "zipcode": 10023
+        },
+      "phone": "555-555-1212"
+    },
+    {
+      "id": 2,
+      "name": "Jane Timo",
+      "email": "jane.timo@gmail.com",
+      "address": {
+        "street": "plot 39, benny street",
+        "city": "lagos",
+        "zipcode": 10023
+        },
+      "phone": "555-555-2323"
+    },
+    {
+      "id": 3,
+      "name": "Daniel miracle",
+      "email": "Daniel.miracle@gmail.com",
+      "address": {
+        "street": "plot 35, saint street",
+        "city": "NewYork",
+        "zipcode": 10023
+        },
+      "phone": "555-555-3434"
+    },
+    {
+      "id": 4,
+      "name": "Linda Smith",
+      "email": "linda.smith@gmail.com",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Seattle",
+        "zipcode": 98101
+      },
+      "phone": "555-555-4545"
+    },
+    {
+      "id": 5,
+      "name": "michael adeboye",
+      "email": "adeboye.michael@gmail.com",
+      "address": {
+        "street": "456 Oijk Street",
+        "city": "San Francisco",
+        "zipcode": 94102
+      },
+      "phone": "555-555-5656"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Philemon",
+      "email": "sarah.Philemon@gmail.com",
+      "address": {
+        "street": "789 Elm Street",
+        "city": "Los Angeles",
+        "zipcode": 90001
+      },
+      "phone": "555-555-6767"
+    }
+
+  ]
+}
