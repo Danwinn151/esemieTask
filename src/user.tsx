@@ -58,10 +58,10 @@ fetchData()
         <MasonryLayout>
           {user.map((u, id) => (
             <div key={u.id} className='flex justify-center items-center'>
-              <div className='flex flex-col justify-center shadow-md m-2 py-3 w-[350px] items-center'>
+              <div className='flex flex-col justify-center rounded-md bg-primary shadow-md m-2 py-3 w-[350px] items-center'>
                 <div className='flex flex-col items-center py-3 px-2 mb-2'>
-                  <h1>{u.name}</h1>
-                  <p>{u.email}</p>
+                  <h1 className='text-white'>{u.name}</h1>
+                  <p className='text-white'>{u.email}</p>
                 </div>
                 <button
                   className='bg-red-500 text-white rounded-md px-3 py-3'
