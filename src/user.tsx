@@ -4,45 +4,27 @@ import {Link, useNavigate} from 'react-router-dom'
 import userDetails from './userDetails';
 import Spinner from './spinner';
 import MasonryLayout from './MasonryLayout';
+import {UserData} from "./models"
 
+//using my global context
 
-//defining the structure data type for our users state
+import { useGlobalContext } from './Context';
 
-type User = {
-    id: number;
-    name: string;
-    email: string & number;
-    address: {
-      street: string | number;
-      city: string;
-      zipcode: number;
-    };
-    phone: string;
-  };
-
-const API_URL:string = "http://localhost:3000/users"
 
 
 const List:React.FC = () => {
-const [user, setUser] = useState<User[]>([])
+
+  //invoking my contextAPI
+
+  const {users, fetchUsers} = useGlobalContext()
+
+  useEffect(() => {
+    fetchUsers()
+  },[])
 
 const navigate = useNavigate()
-//function to fetch my data
-useEffect(() => {
-  const fetchData = async () => {
-    try {
-       const response = await axios.get<User[]>(API_URL)
-    console.log(response.data)
-    setUser(response.data)
-    console.log(user)
-    } catch (error) {
-        console.log(error)
-    }
-    
-}
 
-fetchData()
-},[])
+
     //to render my list of users
   return (
        <>
@@ -50,13 +32,13 @@ fetchData()
                <h1 className='text font-sans font-bold'>Find here the selected list of users and their email address</h1>
 
        </div>
-      {!user.length ? (
+      {!users?.length ? (
         <div className='flex justify-center'>
            <Spinner statusMessage='loading users'/>
         </div>
       ): (
         <MasonryLayout>
-          {user.map((u, id) => (
+          {users?.map((u, id) => (
             <div key={u.id} className='flex justify-center items-center'>
               <div className='flex flex-col justify-center rounded-md bg-primary shadow-md m-2 py-3 w-[350px] items-center'>
                 <div className='flex flex-col items-center py-3 px-2 mb-2'>

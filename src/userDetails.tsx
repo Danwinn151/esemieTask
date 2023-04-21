@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
 import Spinner from './spinner'
-
+import { UserData } from './models'
+import {} from ""
 
 
 
@@ -23,7 +24,7 @@ const userDetails = () => {
     };
     phone: string | number;
   };
- const [specificUser, setSpecificUser] = useState<UserInfo | null>(null)
+ const [specificUser, setSpecificUser] = useState<UserData | null>(null)
   const API_BASE_URL = 'http://localhost:3000/users'
   const {id} = useParams()
   useEffect(() => {
