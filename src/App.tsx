@@ -3,7 +3,7 @@ import {Routes, Route, Link, useNavigate} from "react-router-dom"
 import reactLogo from './assets/react.svg'
 import UserDetails from './userDetails'
 import './App.css'
-import Home from './containers/home'
+import Home from './containers/Home'
 import List from './user'
 function App() {
   const [count, setCount] = useState(0)

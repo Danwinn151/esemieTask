@@ -5,7 +5,7 @@ import userDetails from './userDetails';
 import Spinner from './spinner';
 import MasonryLayout from './MasonryLayout';
 import {UserData} from "./models"
-
+import Navbar from './Navbar';
 //using my global context
 
 import { useGlobalContext } from './Context';
@@ -28,6 +28,7 @@ const navigate = useNavigate()
     //to render my list of users
   return (
        <>
+       <Navbar/>
        <div className='flex justify-center py-3 font-sans'>
                <h1 className='text font-sans font-bold'>Find here the selected list of users and their email address</h1>
 

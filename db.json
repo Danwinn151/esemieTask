@@ -65,7 +65,73 @@
         "zipcode": 90001
       },
       "phone": "555-555-6767"
-    }
+    },
 
+    {
+      "id": 7,
+      "name": "Oliver Okonkwo",
+      "email": "oliver.okonkwo@gmail.com",
+      "address": {
+        "street": "23 Zion Street",
+        "city": "Abuja",
+        "zipcode": 23401
+      },
+      "phone": "555-555-7878"
+    },
+    {
+      "id": 8,
+      "name": "Aisha Mohammed",
+      "email": "aisha.mohammed@gmail.com",
+      "address": {
+        "street": "4 Garden Avenue",
+        "city": "Kano",
+        "zipcode": 23402
+      },
+      "phone": "555-555-8989"
+    },
+    {
+      "id": 9,
+      "name": "Emeka Okafor",
+      "email": "emeka.okafor@gmail.com",
+      "address": {
+        "street": "15 Azikiwe Street",
+        "city": "Enugu",
+        "zipcode": 23403
+      },
+      "phone": "555-555-0101"
+    },
+    {
+      "id": 10,
+      "name": "Fatima Abdullahi",
+      "email": "fatima.abdullahi@gmail.com",
+      "address": {
+        "street": "18 Borno Street",
+        "city": "Maiduguri",
+        "zipcode": 23404
+      },
+      "phone": "555-555-1212"
+    },
+    {
+      "id": 11,
+      "name": "Chinedu Nwosu",
+      "email": "chinedu.nwosu@gmail.com",
+      "address": {
+        "street": "3 Owerri Road",
+        "city": "Owerri",
+        "zipcode": 23405
+      },
+      "phone": "555-555-2323"
+    },
+    {
+      "id": 12,
+      "name": "Blessing Adeyemi",
+      "email": "blessing.adeyemi@gmail.com",
+      "address": {
+        "street": "11 Osogbo Close",
+        "city": "Osogbo",
+        "zipcode": 23406
+      },
+      "phone": "555-555-3434"
+    }
   ]
 }
